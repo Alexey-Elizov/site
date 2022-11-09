@@ -1,0 +1,92 @@
+/*правило для элементов main*/
+main {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/*правило для элементов относящихся к классу a_footer*/
+.a_footer {
+  display: block;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  font-size: 145%;
+  text-align: center;
+  padding: 20px 10px 0px 0px;
+}
+
+h2 {
+  font-size: 22px;
+  background-color: #ffffff;
+  border: 4px solid #000000;
+}
+
+h3 {
+  color: rgb(0, 0, 0);
+  font-family: fantasy;
+  font-size: 120%;
+}
+
+p {
+  background-color: #ffffff;
+  border: 3px solid rgb(124, 29, 148);
+  font-family: fantasy;
+  font-size: 100%;
+}
+
+body{
+  background-color: #f7da9c;
+}
+
+/*подключаем картинку для шапки*/
+header {
+  background: url('https://mo.mosreg.ru/upload/files/Q/Y/QYRFt9hINJksyepkd54GZWvjLefR0TrtWuzwXcPYgBGqhv4pEIvN676Hx2gBDJjNt92o4cM0amnyWbeDMpehWmQEXr2plvH0.jpg') bottom center no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 150px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+adress {
+  text-align: center;
+}
+
+.colorblack {
+  color: rgb(0, 0, 0);
+}
+.colorindigo {
+  color: rgb(124, 29, 148);
+}
+
+ol {
+  font-family: fantasy;
+  font-size: 110%;
+}
+ul {
+  font-family: fantasy;
+  font-size: 110%; 
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+  height: 30vh;
+
+  column-gap:  1px;
+  grid-template-columns: 20px auto 10px;
+  
+  grid-template-areas:
+    "B С C C C C "
+    "B С C C C C";
+}
+
+
+.box-1 {
+  grid-area: B;
+}
+.box-2 {
+  grid-area: C;
+}
